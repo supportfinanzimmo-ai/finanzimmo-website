@@ -1,0 +1,1 @@
+Screenshots hier ablegen: 1_uebersicht.png ... 6_buchungen.png (aus build\screenshots)
