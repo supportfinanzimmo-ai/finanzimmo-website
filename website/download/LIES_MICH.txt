@@ -1,1 +1,2 @@
 Hier den Installer Imura_Setup.exe ablegen (aus release\dist umbenannt).
+Testversion hier ablegen als: Imura_Test.zip (aus release\dist umbenennen)

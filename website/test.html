@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imura Testversion</title>
+<!-- Versteckte Seite: nirgends verlinkt, für Suchmaschinen gesperrt -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#0B1411;--surface:#14211C;--surface2:#1C2D27;--ink:#E8EFEB;--muted:#8FA39A;--line:#243630;--brand:#5FBF9F;--gold:#E0A441;--neg:#E8806A;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:16px;line-height:1.6}
+.w{max-width:820px;margin:0 auto;padding:28px max(20px,env(safe-area-inset-left,0px)) 70px max(20px,env(safe-area-inset-right,0px))}
+h1,h2{font-family:"Bricolage Grotesque",sans-serif;margin:0;line-height:1.1}
+h1{font-size:clamp(34px,6vw,50px);font-weight:800}
+h2{font-size:24px;margin:0 0 12px}
+.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:22px;text-decoration:none;color:var(--ink)}.logo span{color:var(--gold)}
+.muted{color:var(--muted)}
+.pill{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);color:var(--gold);font-weight:700;font-size:13px;padding:5px 12px;border-radius:99px;margin:26px 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;margin-top:18px}
+.warn{background:#2c1f10;border:1px solid #5a3f1a}
+.warn b{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:inherit;font-weight:700;border:0;background:var(--brand);color:#06130E;border-radius:14px;padding:15px 24px;text-decoration:none;font-size:17px;cursor:pointer}
+.btn.g{background:var(--surface2);color:var(--ink);font-size:15px;padding:11px 18px}
+ol.schritte{margin:0;padding-left:0;list-style:none;counter-reset:s;display:grid;gap:14px}
+ol.schritte li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px}
+ol.schritte li::before{content:counter(s);width:34px;height:34px;border-radius:10px;background:var(--surface2);display:grid;place-items:center;font-weight:700;color:var(--brand)}
+kbd{background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:14px}
+.check h3{font-size:15px;margin:18px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.check label{display:flex;gap:12px;align-items:flex-start;padding:9px 10px;border-radius:10px;cursor:pointer}
+.check label:hover{background:var(--surface2)}
+.check input{width:20px;height:20px;margin-top:2px;accent-color:var(--brand);flex:none}
+.check input:checked+span{color:var(--muted);text-decoration:line-through}
+.fortschritt{height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:6px}
+.fortschritt i{display:block;height:100%;background:var(--brand);width:0;transition:width .3s}
+.fragen li{margin-bottom:6px}
+.mail{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:10px}
+code{background:var(--surface2);padding:2px 8px;border-radius:6px}
+footer{margin-top:40px;color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="w">
+  <a class="logo" href="index.html">Imura<span>.</span></a>
+  <div class="pill">Nur für Tester · bitte Link nicht weitergeben</div>
+  <h1>Danke, dass du Imura testest!</h1>
+  <p class="muted" style="font-size:18px">Du bekommst die App vor allen anderen. Deine Rückmeldungen entscheiden, was bis zum Start noch besser wird.</p>
+
+  <div class="card warn">
+    <b>⚠ Testversion</b> – sie kann noch Fehler haben. <b>Bitte mach regelmäßig ein Backup</b>
+    (in der App: Sicherheit &amp; Sync → Backup). Am einfachsten startest du erst mit
+    <b>Beispieldaten</b> und nutzt deine echten Daten erst, wenn du dich sicher fühlst.
+  </div>
+
+  <div class="card" style="text-align:center">
+    <h2>Testversion herunterladen</h2>
+    <p class="muted" style="margin:0 0 18px">Windows 10 und 11 · Version <span id="version">1.0.4-test1</span></p>
+    <a class="btn" href="download/Imura_Test.zip" download>⬇ Imura Testversion laden</a>
+  </div>
+
+  <div class="card">
+    <h2>So startest du</h2>
+    <ol class="schritte">
+      <li><div><b>ZIP entpacken:</b> Rechtsklick auf die geladene Datei → <i>Alle extrahieren…</i> → z. B. nach <code>C:\Programme-Test\Imura</code>.</div></li>
+      <li><div><b>App starten:</b> Im entpackten Ordner doppelt auf <code>finanz_immo_app.exe</code> klicken.</div></li>
+      <li><div><b>Windows-Warnung:</b> Es erscheint „Der Computer wurde durch Windows geschützt“. Das ist normal, weil die Testversion noch nicht signiert ist. Klicke auf <b>Weitere Informationen</b> → <b>Trotzdem ausführen</b>.</div></li>
+      <li><div><b>Ausprobieren:</b> Beim ersten Start durch die Willkommensseiten klicken und <b>„Mit Beispieldaten ausprobieren“</b> wählen. So siehst du alle Bereiche sofort gefüllt.</div></li>
+      <li><div><b>Eigene Daten (optional):</b> Später unter Profil → „Neues Profil anlegen“ ein eigenes Profil mit PIN anlegen.</div></li>
+      <li><div><b>Feedback geben:</b> Unten rechts in der App ist ein gelber <b>Feedback</b>-Knopf. Ein Screenshot hilft sehr: <kbd>Windows</kbd> + <kbd>Umschalt</kbd> + <kbd>S</kbd>.</div></li>
+    </ol>
+  </div>
+
+  <div class="card check">
+    <h2>Deine Test-Aufgaben</h2>
+    <p class="muted" style="margin:0">Hake ab, was du ausprobiert hast – das bleibt in deinem Browser gespeichert.</p>
+    <div class="fortschritt"><i id="balken"></i></div>
+    <p class="muted" style="margin:6px 0 0;font-size:14px" id="stand"></p>
+
+    <h3>Woche 1 – Einstieg</h3>
+    <label><input type="checkbox"><span>App installieren, starten und die Willkommensseiten ansehen</span></label>
+    <label><input type="checkbox"><span>„Mit Beispieldaten ausprobieren“ und durch alle Seiten klicken</span></label>
+    <label><input type="checkbox"><span>Eigenes Profil anlegen, mit PIN</span></label>
+    <label><input type="checkbox"><span>Ein Konto anlegen und Umsätze per Online-Banking oder CSV-Import holen</span></label>
+    <label><input type="checkbox"><span>10 Buchungen einsortieren, eine aufteilen, eine löschen und „Rückgängig“ drücken</span></label>
+    <label><input type="checkbox"><span>Ein Budget und ein Sparziel anlegen</span></label>
+    <label><input type="checkbox"><span>Aktie oder ETF kaufen (auch per ISIN suchen) und Kurs-Schlüssel eintragen</span></label>
+
+    <h3>Woche 2 – Tiefer</h3>
+    <label><input type="checkbox"><span>(Vermieter) Immobilie mit Einheit, Mieter und Darlehen anlegen</span></label>
+    <label><input type="checkbox"><span>(Vermieter) Mieteingang prüfen und Mieterkonto als PDF speichern</span></label>
+    <label><input type="checkbox"><span>Vertrag anlegen oder „Erkannte prüfen“ nutzen, Kündigung als PDF</span></label>
+    <label><input type="checkbox"><span>Übersicht anpassen: verschieben, Größe S/M, ausblenden</span></label>
+    <label><input type="checkbox"><span>Geldfluss, Wochen-Check und Rückblick ansehen</span></label>
+    <label><input type="checkbox"><span>Backup mit Passwort erstellen und wiederherstellen</span></label>
+    <label><input type="checkbox"><span>App 5 Minuten offen lassen: sperrt sie sich? PIN 5× falsch eingeben</span></label>
+  </div>
+
+  <div class="card">
+    <h2>Zum Schluss: 5 kurze Fragen</h2>
+    <ol class="fragen">
+      <li>Was war am verwirrendsten?</li>
+      <li>Was hast du gesucht und nicht gefunden?</li>
+      <li>Was würdest du sofort weglassen?</li>
+      <li>Würdest du dafür zahlen – und wie viel im Jahr?</li>
+      <li>Wie wahrscheinlich empfiehlst du Imura weiter (0–10)?</li>
+    </ol>
+    <div class="mail">
+      <a class="btn g" id="antworten" href="#">✉ Antworten per E-Mail</a>
+      <span class="muted">oder direkt an <a id="adresse" href="#" style="color:var(--brand)">FEEDBACK_EMAIL</a></span>
+    </div>
+  </div>
+
+  <footer>
+    Danke fürs Mitmachen! · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+  </footer>
+</div>
+
+<script>
+// Feedback-Adresse an einer Stelle pflegen:
+const EMAIL = 'FEEDBACK_EMAIL';
+const fragen = 'Hallo,%0D%0A%0D%0A1. Am verwirrendsten war: %0D%0A2. Gesucht und nicht gefunden: %0D%0A3. Würde ich weglassen: %0D%0A4. Würde zahlen (pro Jahr): %0D%0A5. Weiterempfehlung (0-10): %0D%0A';
+document.getElementById('adresse').textContent = EMAIL;
+document.getElementById('adresse').href = 'mailto:' + EMAIL;
+document.getElementById('antworten').href = 'mailto:' + EMAIL + '?subject=Imura%20Test%20-%20Abschlussfragen&body=' + fragen;
+
+// Checkliste: Haken im Browser merken
+const boxen = [...document.querySelectorAll('.check input')];
+const KEY = 'imura-test-checkliste';
+let gespeichert = [];
+try { gespeichert = JSON.parse(localStorage.getItem(KEY) || '[]'); } catch (e) {}
+boxen.forEach((b, i) => { b.checked = !!gespeichert[i]; b.addEventListener('change', aktualisieren); });
+function aktualisieren() {
+  const n = boxen.filter(b => b.checked).length;
+  document.getElementById('balken').style.width = (n / boxen.length * 100) + '%';
+  document.getElementById('stand').textContent = n + ' von ' + boxen.length + ' erledigt' + (n === boxen.length ? ' – super, danke! 🎉' : '');
+  try { localStorage.setItem(KEY, JSON.stringify(boxen.map(b => b.checked))); } catch (e) {}
+}
+aktualisieren();
+</script>
+</body>
+</html>
