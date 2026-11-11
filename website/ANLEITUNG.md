@@ -8,7 +8,7 @@ In **index.html**:
 | `LEMON_LINK_LIFETIME` | Checkout-Link „Lifetime“ |
 | `MICROSOFT_STORE_LINK` | Link zur Store-Seite (oder den Knopf löschen, solange es keinen gibt) |
 | `SUPPORT_EMAIL` | deine Support-Adresse |
-| `29 €` / `79 €` | deine echten Preise (Abschnitt „Preise“) |
+| (erledigt) | Preise 34,99 € / 89,99 € sind eingetragen |
 | `Version 1.0.4 · 38 MB` | aktuelle Version und Größe des Installers |
 
 In **impressum.html** und **datenschutz.html**: alle Angaben in [eckigen Klammern]
@@ -22,7 +22,7 @@ In **version.json**: Versionsnummer und Download-Link.
 - `bilder/`: Screenshots `1_uebersicht.png` … `6_buchungen.png`
   (aus `build\screenshots`, Nr. 1 selbst aufnehmen). Fehlende Bilder blendet
   die Seite automatisch aus.
-- `download/FinanzImmo_Setup.exe`: den Installer aus `release\dist` (umbenennen).
+- `download/Imura_Setup.exe`: den Installer aus `release\dist` (umbenennen).
 - Die beiden `LIES_MICH.txt` danach löschen.
 
 ## 3. Hochladen – kostenlos mit Netlify (am einfachsten)
