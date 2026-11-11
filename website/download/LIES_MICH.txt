@@ -1,1 +1,1 @@
-Hier den Installer FinanzImmo_Setup.exe ablegen (aus release\dist umbenannt).
+Hier den Installer Imura_Setup.exe ablegen (aus release\dist umbenannt).
